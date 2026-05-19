@@ -77,8 +77,9 @@ Two fonts. Never use any other font on this site.
 | Label           | `--size-label`    | 0.8rem                     | Nav, buttons, section labels, captions, footer  |
 
 **Italic text** (feature subtitles and notes) uses Cormorant Garamond at 1.5rem.
-- Subtitles (`.feature-sub`): color `--gold`, italic, weight 600
-- Notes (`.feature-note`): color `--teal`, italic
+- Subtitles (`.feature-sub`): color `--gold`, italic, weight 600 — e.g. *"A journey of emotion and healing through sound"*
+- Notes (`.feature-note`): color `--teal`, italic — e.g. *"Singing in multiple Indian languages..."*
+- The selector must be `.feature-text .feature-sub` (not just `.feature-sub`) due to CSS specificity — `.feature-text p` would otherwise override it.
 
 ---
 

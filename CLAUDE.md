@@ -24,8 +24,8 @@ courageous, curious, and an adventurer into inner spaces. She balances logic and
 in all her work and is constantly learning, reflecting, and transforming.
 
 She struggled for a long time with perfectionism and fear of criticism keeping her work
-private. This website is her deliberate act of courage — to share what is honest and
-of value, even when it isn't perfect.
+private. This website is her deliberate act of courage, to share what is honest and
+of value, especially when it isn't perfect.
 
 ### Music
 - Trained in **Carnatic classical vocal** from age 5, with a dedicated teacher for 10 years
@@ -117,12 +117,12 @@ No bright colours, no stock-photo energy, no marketing language.
 ## Current Homepage Sections (index.html)
 
 1. **Nav** — Fixed, blurred background. Logo `iam.kavya` left, links right (Music, Poetry, Blog, About)
-2. **Hero** — Full-viewport. Headline: *"An inner journey, shared."* Tags: Carnatic Classical, Poetry, Reflection, Healing. Quote from Kavya.
+2. **Hero** — Full-viewport. Headline: *"An inner journey, shared."* Button: "Explore my work". Quote: *"I balance logic and beauty in all my work, constantly learning, reflecting, and transforming."*
 3. **Intro** — White background. Short bio paragraph. Links to About section.
-4. **Explore** — Three feature cards, equal weight:
-   - **01 Music** — Carnatic roots, Sounds of Isha, Khayal & Dhrupad
-   - **02 Poetry** — Metaphor, relationships, spirituality, healing
-   - **03 Blog** — Essays on becoming, healthy and beautiful life
+4. **Explore** — Three feature cards, equal weight. No numbers, no tag pills.
+   - **Music** — South Indian Carnatic roots, YouTube (Kavya's Music), Sounds of Isha USA, Khayal & Dhrupad
+   - **Poetry** — Metaphor, relationships, spirituality, healing
+   - **Blog** — Essays on becoming, healthy and beautiful life
 5. **About** — Dark teal background. Full personal story in Kavya's own words.
 6. **Footer** — Darkest teal. Logo, nav links, copyright.
 
