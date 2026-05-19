@@ -305,7 +305,7 @@ nav ul a:hover { color: var(--teal); }
 }
 
 .feature-text .feature-sub {
-  color: var(--teal);
+  color: var(--gold);
   font-style: italic;
   margin-bottom: 1.4rem;
   font-family: 'Cormorant Garamond', serif;
@@ -322,7 +322,7 @@ nav ul a:hover { color: var(--teal); }
 .feature-note {
   font-family: 'Cormorant Garamond', serif !important;
   font-style: italic;
-  color: var(--teal) !important;
+  color: var(--gold) !important;
   font-size: 1.5rem !important;
   margin-bottom: 1.8rem !important;
 }
