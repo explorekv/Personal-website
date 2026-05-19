@@ -75,20 +75,30 @@ Kavya's chosen palette. Do not substitute.
 
 | Role             | Hex       | CSS Variable     |
 |------------------|-----------|------------------|
-| Primary deep     | `#0e4f4f` | `--teal-deep`    |
-| Primary main     | `#1a6b6b` | `--teal`         |
-| Primary mid      | `#267a7a` | `--teal-mid`     |
-| Primary light    | `#d4eaea` | `--teal-light`   |
+| Primary deep     | `#00515f` | `--teal-deep`    |
+| Primary main     | `#007a8c` | `--teal`         |
+| Primary mid      | `#009db3` | `--teal-mid`     |
+| Primary light    | `#b8e5ec` | `--teal-light`   |
 | Gold accent      | `#b8923a` | `--gold`         |
 | Gold light       | `#f5ecd9` | `--gold-light`   |
 | Page background  | `#f8f6f2` | `--bg`           |
 | Body text        | `#1c1c1c` | `--text`         |
-| About section bg | `#0e4f4f` | (same as teal-deep) |
-| Footer bg        | `#0a3a3a` | (hardcoded)      |
+| About section bg | `#00515f` | (hardcoded)      |
+| Footer bg        | `#003340` | (hardcoded)      |
 
 ### Fonts — Two fonts only, never add others
-- **Cormorant Garamond** (Google Fonts) — headings, logo, blockquotes. Weights: 300, 400, 600 + italic
+- **Cormorant Garamond** (Google Fonts) — headings, logo, blockquotes, italic feature text. Weights: 300, 400, 600 + italic
 - **Inter** (Google Fonts) — body text, nav, buttons, labels. Weights: 300, 400, 500
+
+### Type Scale — 4 sizes only
+| Name    | Variable          | Value                      |
+|---------|-------------------|----------------------------|
+| Display | `--size-display`  | clamp(3.5rem, 7vw, 6.5rem) |
+| Heading | `--size-heading`  | clamp(2.2rem, 4vw, 3.2rem) |
+| Body    | `--size-body`     | 1.15rem                    |
+| Label   | `--size-label`    | 0.8rem                     |
+
+Italic feature text (subtitles and notes) uses Cormorant Garamond at 1.5rem — outside the 4-size scale by exception.
 
 ### Layout
 - Max content width: **1200px**, centered
@@ -131,6 +141,7 @@ No bright colours, no stock-photo energy, no marketing language.
 
 ## Workflow Notes
 
+- **No em dashes** — use commas, colons, or periods instead. Kavya's preference.
 - **No build tools** — pure HTML and CSS. No npm, no frameworks, no bundlers.
 - **Deployment:** GitHub Pages from the `main` branch, root directory
 - **To deploy changes:** commit and push to `main` — GitHub Pages auto-publishes

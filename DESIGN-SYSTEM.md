@@ -21,11 +21,11 @@ These are the exact colors used throughout the site. Never substitute them.
 ### Primary — Peacock Teal
 | Name         | Hex       | Use                                      |
 |--------------|-----------|------------------------------------------|
-| `--teal-deep`  | `#0e4f4f` | Headings, dark backgrounds, logo         |
-| `--teal`       | `#1a6b6b` | Buttons, links, labels, accents          |
-| `--teal-mid`   | `#267a7a` | Hover states, gradients                  |
-| `--teal-light` | `#d4eaea` | Soft backgrounds, tags, subtle borders   |
-| `--teal-glow`  | `rgba(26, 107, 107, 0.12)` | Glow effects, shadows   |
+| `--teal-deep`  | `#00515f` | Headings, dark backgrounds, logo         |
+| `--teal`       | `#007a8c` | Buttons, links, labels, accents          |
+| `--teal-mid`   | `#009db3` | Hover states, gradients                  |
+| `--teal-light` | `#b8e5ec` | Soft backgrounds, subtle borders         |
+| `--teal-glow`  | `rgba(0, 122, 140, 0.14)` | Glow effects, shadows    |
 
 ### Secondary — Warm Gold
 | Name          | Hex       | Use                                      |
@@ -68,19 +68,17 @@ Two fonts. Never use any other font on this site.
 - **Used for:** All body text, navigation, buttons, labels, captions
 - **Character:** Clean, modern, readable
 
-### Type Scale
-| Element              | Font                | Size                     | Weight | Notes                        |
-|----------------------|---------------------|--------------------------|--------|------------------------------|
-| Site logo            | Cormorant Garamond  | 1.45rem                  | 600    | Color: `--teal-deep`         |
-| Hero h1              | Cormorant Garamond  | clamp(3.2rem, 7.5vw, 6.5rem) | 300 | Color: `--teal-deep`     |
-| Section h2           | Cormorant Garamond  | clamp(2.4rem, 4vw, 3.6rem) | 300  | Color: `--teal-deep`         |
-| About h2             | Cormorant Garamond  | clamp(2.2rem, 4vw, 3rem) | 300    | Color: white                 |
-| Feature subtitle     | Cormorant Garamond  | 1.1rem                   | 400    | Italic, color: `--gold`      |
-| Body text            | Inter               | 1rem / 0.96rem           | 400    | Color: #444 or #555          |
-| Section label        | Inter               | 0.72rem                  | 500    | Uppercase, 0.25em tracking   |
-| Nav links            | Inter               | 0.82rem                  | 400    | Uppercase, 0.07em tracking   |
-| Buttons              | Inter               | 0.82rem                  | 500    | Uppercase, 0.12em tracking   |
-| Feature number       | Inter               | 0.7rem                   | 500    | Uppercase, color: `--gold`   |
+### Type Scale — 4 sizes only
+| Name            | Variable          | Value                      | Used for                                        |
+|-----------------|-------------------|----------------------------|-------------------------------------------------|
+| Display         | `--size-display`  | clamp(3.5rem, 7vw, 6.5rem) | Hero h1 only                                    |
+| Heading         | `--size-heading`  | clamp(2.2rem, 4vw, 3.2rem) | All h2s, About heading                          |
+| Body            | `--size-body`     | 1.15rem                    | All paragraphs, intro, descriptions             |
+| Label           | `--size-label`    | 0.8rem                     | Nav, buttons, section labels, captions, footer  |
+
+**Italic text** (feature subtitles and notes) uses Cormorant Garamond at 1.5rem.
+- Subtitles (`.feature-sub`): color `--gold`, italic, weight 600
+- Notes (`.feature-note`): color `--teal`, italic
 
 ---
 
@@ -175,6 +173,7 @@ The writing on this site has a distinct voice. Maintain it on all new pages.
 - **Poetic but clear** — uses metaphor, but never obscures meaning
 - **Warm and unhurried** — no urgency, no hype, no calls to "subscribe now"
 - **Rooted in Indian classical tradition** — reference Carnatic, Khayal, Dhrupad naturally, not as exotic labels
+- **No em dashes** — use commas, colons, or periods instead
 
 Headlines should feel like the opening line of a poem, not a marketing slogan.
 
