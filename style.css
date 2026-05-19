@@ -297,7 +297,7 @@ nav ul a:hover { color: var(--teal); }
 
 .feature-text h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: var(--size-display);
+  font-size: var(--size-heading);
   font-weight: 300;
   color: var(--teal-deep);
   line-height: 1.1;
@@ -309,7 +309,7 @@ nav ul a:hover { color: var(--teal); }
   font-style: italic;
   margin-bottom: 1.4rem;
   font-family: 'Cormorant Garamond', serif;
-  font-size: var(--size-heading);
+  font-size: var(--size-body);
   font-weight: 600;
 }
 
@@ -322,7 +322,7 @@ nav ul a:hover { color: var(--teal); }
 .feature-note {
   font-style: italic;
   color: var(--light) !important;
-  font-size: var(--size-label) !important;
+  font-size: var(--size-body) !important;
   margin-bottom: 1.8rem !important;
 }
 
