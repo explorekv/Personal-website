@@ -7,11 +7,11 @@
   --light: #999;
 
   /* Peacock palette */
-  --teal:       #0b6b7d;
-  --teal-deep:  #054859;
-  --teal-mid:   #1a8595;
-  --teal-light: #c8e8ed;
-  --teal-glow:  rgba(11, 107, 125, 0.12);
+  --teal:       #007a8c;
+  --teal-deep:  #00515f;
+  --teal-mid:   #009db3;
+  --teal-light: #b8e5ec;
+  --teal-glow:  rgba(0, 122, 140, 0.14);
   --gold:       #b8923a;
   --gold-light: #f5ecd9;
 
@@ -138,7 +138,7 @@ nav ul a:hover { color: var(--teal); }
   padding: 8rem 2.5rem 5rem;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(160deg, #d6edf2 0%, var(--bg) 55%);
+  background: linear-gradient(160deg, #cce9ef 0%, var(--bg) 55%);
 }
 
 /* decorative circles */
@@ -332,9 +332,9 @@ nav ul a:hover { color: var(--teal); }
   overflow: hidden;
 }
 
-.music-visual  { background: linear-gradient(135deg, #054859 0%, #0b6b7d 60%, #1a8595 100%); }
-.poetry-visual { background: linear-gradient(135deg, #083d6b 0%, #0b5e80 60%, #1a8595 100%); }
-.blog-visual   { background: linear-gradient(135deg, #054859 0%, #1a7090 60%, #2a9aaa 100%); }
+.music-visual  { background: linear-gradient(135deg, #00515f 0%, #007a8c 60%, #009db3 100%); }
+.poetry-visual { background: linear-gradient(135deg, #00415a 0%, #006e85 60%, #009db3 100%); }
+.blog-visual   { background: linear-gradient(135deg, #00515f 0%, #008fa3 60%, #00bcd4 100%); }
 
 .visual-symbol {
   font-size: 5rem;
@@ -359,7 +359,7 @@ nav ul a:hover { color: var(--teal); }
    ABOUT
 ══════════════════════════════════ */
 .about {
-  background: #054859;
+  background: #00515f;
   color: #e8f4f4;
   padding: 8rem 2.5rem;
 }
@@ -388,7 +388,7 @@ nav ul a:hover { color: var(--teal); }
    FOOTER
 ══════════════════════════════════ */
 footer {
-  background: #033545;
+  background: #003340;
   color: rgba(255,255,255,0.5);
   padding: 3rem 2.5rem;
 }
