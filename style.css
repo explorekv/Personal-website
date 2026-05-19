@@ -6,6 +6,12 @@
   --muted: #666;
   --light: #999;
 
+  /* Type scale — 4 sizes only */
+  --size-display: clamp(3.5rem, 7vw, 6.5rem);  /* hero h1 */
+  --size-heading: clamp(2.2rem, 4vw, 3.2rem);  /* all h2s, feature subtitles, quote */
+  --size-body:    1.15rem;                       /* all body text */
+  --size-label:   0.8rem;                        /* nav, buttons, tags, captions */
+
   /* Peacock palette */
   --teal:       #007a8c;
   --teal-deep:  #00515f;
@@ -32,7 +38,7 @@ body {
 
 /* ── UTILITIES ── */
 .section-label {
-  font-size: 0.95rem;
+  font-size: var(--size-label);
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--teal);
@@ -44,7 +50,7 @@ body {
 .link-arrow {
   color: var(--teal);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: var(--size-body);
   font-weight: 500;
   letter-spacing: 0.02em;
   border-bottom: 1px solid var(--teal-light);
@@ -60,7 +66,7 @@ body {
   background: var(--teal);
   color: #fff;
   text-decoration: none;
-  font-size: 0.82rem;
+  font-size: var(--size-label);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
@@ -102,7 +108,7 @@ nav {
 
 .logo {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.45rem;
+  font-size: var(--size-body);
   font-weight: 600;
   color: var(--teal-deep);
   text-decoration: none;
@@ -117,7 +123,7 @@ nav ul {
 nav ul a {
   text-decoration: none;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: var(--size-label);
   letter-spacing: 0.07em;
   text-transform: uppercase;
   transition: color 0.2s;
@@ -173,7 +179,7 @@ nav ul a:hover { color: var(--teal); }
 }
 
 .eyebrow {
-  font-size: 1rem;
+  font-size: var(--size-label);
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold);
@@ -183,7 +189,7 @@ nav ul a:hover { color: var(--teal); }
 
 .hero h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3.2rem, 7.5vw, 6.5rem);
+  font-size: var(--size-display);
   font-weight: 300;
   line-height: 1.05;
   color: var(--teal-deep);
@@ -197,7 +203,7 @@ nav ul a:hover { color: var(--teal); }
 }
 
 .hero-desc {
-  font-size: 1.1rem;
+  font-size: var(--size-body);
   color: var(--muted);
   line-height: 1.8;
   margin-bottom: 2rem;
@@ -211,7 +217,7 @@ nav ul a:hover { color: var(--teal); }
   margin-bottom: 2.5rem;
 }
 .hero-tags span {
-  font-size: 0.75rem;
+  font-size: var(--size-label);
   letter-spacing: 0.08em;
   padding: 0.35rem 0.9rem;
   border: 1px solid var(--teal-mid);
@@ -228,7 +234,7 @@ nav ul a:hover { color: var(--teal); }
 }
 .hero-quote blockquote {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.65rem;
+  font-size: var(--size-heading);
   font-style: italic;
   color: var(--teal);
   font-weight: 400;
@@ -250,7 +256,7 @@ nav ul a:hover { color: var(--teal); }
   margin: 0 auto;
 }
 .intro-text {
-  font-size: 1.08rem;
+  font-size: var(--size-body);
   color: #444;
   line-height: 1.85;
   margin-bottom: 1.3rem;
@@ -282,7 +288,7 @@ nav ul a:hover { color: var(--teal); }
 
 .feature-num {
   display: block;
-  font-size: 0.9rem;
+  font-size: var(--size-label);
   letter-spacing: 0.2em;
   color: var(--gold);
   margin-bottom: 0.8rem;
@@ -291,7 +297,7 @@ nav ul a:hover { color: var(--teal); }
 
 .feature-text h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-size: var(--size-display);
   font-weight: 300;
   color: var(--teal-deep);
   line-height: 1.1;
@@ -303,12 +309,12 @@ nav ul a:hover { color: var(--teal); }
   font-style: italic;
   margin-bottom: 1.4rem;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
+  font-size: var(--size-heading);
   font-weight: 600;
 }
 
 .feature-text p {
-  font-size: 0.96rem;
+  font-size: var(--size-body);
   color: #555;
   line-height: 1.85;
   margin-bottom: 1rem;
@@ -316,7 +322,7 @@ nav ul a:hover { color: var(--teal); }
 .feature-note {
   font-style: italic;
   color: var(--light) !important;
-  font-size: 0.88rem !important;
+  font-size: var(--size-label) !important;
   margin-bottom: 1.8rem !important;
 }
 
@@ -346,7 +352,7 @@ nav ul a:hover { color: var(--teal); }
 .feature-visual:hover .visual-symbol { transform: scale(1.1); }
 
 .visual-label {
-  font-size: 0.7rem;
+  font-size: var(--size-label);
   letter-spacing: 0.18em;
   color: rgba(255,255,255,0.55);
   text-transform: uppercase;
@@ -369,14 +375,14 @@ nav ul a:hover { color: var(--teal); }
 }
 .about h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-size: var(--size-heading);
   font-weight: 300;
   color: #fff;
   margin-bottom: 2.5rem;
   line-height: 1.15;
 }
 .about-body p {
-  font-size: 1rem;
+  font-size: var(--size-body);
   line-height: 1.9;
   color: rgba(232, 244, 244, 0.8);
   margin-bottom: 1.4rem;
@@ -402,7 +408,7 @@ footer {
 }
 .footer-logo {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.3rem;
+  font-size: var(--size-body);
   color: rgba(255,255,255,0.7);
   letter-spacing: 0.05em;
 }
@@ -413,13 +419,13 @@ footer {
 .footer-links a {
   color: rgba(255,255,255,0.4);
   text-decoration: none;
-  font-size: 0.78rem;
+  font-size: var(--size-label);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: color 0.2s;
 }
 .footer-links a:hover { color: var(--teal-light); }
-.footer-copy { font-size: 0.75rem; }
+.footer-copy { font-size: var(--size-label); }
 
 
 /* ══════════════════════════════════
